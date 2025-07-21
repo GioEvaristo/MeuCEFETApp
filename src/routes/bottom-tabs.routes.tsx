@@ -15,19 +15,19 @@ export default function BottomTabsRoutes(){
                 <Tab.Screen
                 name="Início"
                 component={Home}
-                options={{tabBarIcon: ({ color, size }) => (<Ionicons name="home" size={size} color='#ff8c00'/>),}}
+                options={{headerTintColor: 'white', headerStyle: {backgroundColor: '#000435'}, tabBarIcon: ({ color, size }) => (<Ionicons name="home" size={size} color='#ff8c00'/>), tabBarStyle: { backgroundColor: '#000435' }}}
                 ></Tab.Screen>
 
                 <Tab.Screen
                 name="Horários"
                 component={Horarios}
-                options={{tabBarIcon: ({ color, size }) => (<Ionicons name='time' size={size} color='#ff8c00'/>),}}
+                options={{headerTintColor: 'white', headerStyle: {backgroundColor: '#000435'}, tabBarIcon: ({ color, size }) => (<Ionicons name='time' size={size} color='#ff8c00'/>), tabBarStyle: { backgroundColor: '#000435' }}}
                 ></Tab.Screen>
 
                 <Tab.Screen
                 name="Ajuda"
                 component={Ajuda}
-                options={{tabBarIcon: ({ color, size }) => (<Ionicons name='help-circle' size={size} color='#ff8c00'/>),}}
+                options={{headerTintColor: 'white', headerStyle: {backgroundColor: '#000435'}, tabBarIcon: ({ color, size }) => (<Ionicons name='help-circle' size={size} color='#ff8c00'/>), tabBarStyle: { backgroundColor: '#000435' }}}
                 ></Tab.Screen>
 
             </Tab.Navigator>    
