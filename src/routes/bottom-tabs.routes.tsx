@@ -14,6 +14,11 @@ export default function BottomTabsRoutes(){
         <NavigationContainer>
             <Tab.Navigator initialRouteName='pag-home'>
                 <Tab.Screen
+                name="pag-login"
+                component={Login}
+                options={{title: 'Login', tabBarShowLabel: false, headerTintColor: 'white', headerStyle: {backgroundColor: '#000435'}, tabBarIcon: ({ color, size }) => (<Ionicons name="home" size={size} color='#ff8c00'/>), tabBarStyle: { backgroundColor: '#000435' }}}
+                ></Tab.Screen>
+                <Tab.Screen
                 name="pag-home"
                 component={Home}
                 options={{title: 'Início', tabBarShowLabel: false, headerTintColor: 'white', headerStyle: {backgroundColor: '#000435'}, tabBarIcon: ({ color, size }) => (<Ionicons name="home" size={size} color='#ff8c00'/>), tabBarStyle: { backgroundColor: '#000435' }}}

@@ -7,13 +7,14 @@ export default function Home({ route, navigation }: any) {
   const nome = route?.params?.nome
 
   function irParaHorarios() {
-    navigation.navigate('pag-horarios');
+    navigation.navigate('pag-horarios', {nome});
   }
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.titulo}>Seja muito bem-vindo(a) {nome} ao CEFET-MG!</Text>
-      <Text style={styles.subtitulo}>Bem-vindo(a) ao aplicativo Meu CEFET-MG! Aqui começa uma nova fase da sua história.</Text>
+      <Text style={styles.titulo}>Olá {nome}!</Text>
+      <Text style={styles.subtitulo}>Seja muito bem-vindo(a) ao aplicativo Meu CEFET-MG!</Text>
+      <Text style={styles.subtitulo}>Aqui começa uma nova fase da sua história.</Text>
       <Pressable
         onPress={irParaHorarios}
         style={{

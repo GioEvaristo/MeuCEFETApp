@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Horarios() {
+export default function Horarios({ route }: any) {
+  const nome = route?.params?.nome
+
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Cursos Técnicos Integrados</Text>
+      <Text style={styles.titulo}>{nome}, acesse aqui os horários de sua turma:</Text>
 
       <Text style={styles.titulo}>🕘 Segunda a Sexta-feira: 7h00 às 13h00</Text>
 
