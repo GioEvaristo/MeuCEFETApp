@@ -1,28 +1,29 @@
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const {Screen, Navigator} = createStackNavigator();
+const { Screen, Navigator } = createStackNavigator();
 
 import Home from '../screens/Home';
 import Horarios from '../screens/Horarios';
 import Ajuda from '../screens/Ajuda';
+import Login from '../screens/Login';
 
-export default function StackRoutes(){ 
-    return(
+export default function StackRoutes() {
+    return (
         <Navigator>
-            <Screen 
+            <Screen
+                name='pag-login'
+                component={Login}
+            />
+            <Screen
                 name='pag-home'
                 component={Home}
-                options={{
-                    title: 'Página Inicial',
-                    headerTintColor: 'red'
-                }}
             />
-            <Screen 
+            <Screen
                 name='pag-horarios'
                 component={Horarios}
             />
 
-            <Screen 
+            <Screen
                 name='pag-ajuda'
                 component={Ajuda}
             />
